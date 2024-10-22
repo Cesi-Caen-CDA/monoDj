@@ -14,7 +14,7 @@
     <main>
         <section id="reservations">
             <h2>Réserver une soirée</h2>
-            <form id="reservationForm">
+            <form id="reservationForm" onsubmit="return Booking()">
                 <label for="clientName">Nom du client:</label>
                 <input type="text" id="clientName" required>
                 
@@ -40,5 +40,6 @@
     </main>
 
     <script src="../scripts/clients.js"></script>
+    <script type="module" src="../scripts/booking.js"></script>
 </body>
 </html>
