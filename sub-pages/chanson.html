@@ -10,26 +10,26 @@
 </head>
 <body>
     <header>
-        <h1>Ajouter un client</h1>
+        <h1>Ajouter une chanson</h1>
     </header>
     <main>
         <section>
-            <form id="clientForm">
-                <label for="eventDate">Nom : </label>
-                <input type="text" id="nom" required>
+            <form id="chansonForm">
+                <label for="artiste">Artiste : </label>
+                <input type="text" id="artiste" required>
 
-                <label for="songName">Prénom : </label>
-                <input type="text" id="prenom" required>
+                <label for="titre">Titre : </label>
+                <input type="text" id="titre" required>
 
                 <button type="submit">Ajouter à la liste</button>
             </form>
         </section>
     </main>
     <script>
-    let clients = []
-    $("#clientForm").on("submit", function(event){
+    let chansons = []
+    $("#chansonForm").on("submit", function(event){
         event.preventDefault();
-        clients.push({"id": Date.now() , "nom": $('#nom').val(), "prenom": $('#prenom').val()})
+        chansons.push({"id": Date.now() , "artiste": $('#artiste').val(), "titre": $('#titre').val()})
         
     });
     </script>
